@@ -1,1 +1,1 @@
-# -
+做网络过滤或者加速类项目时，有时候要取发起dns的真实进程。但是windows的dns都是通过dnscache服务进程，也就是svchost.exe发出的，所以普通方法取到的进程都是svchost.exe。其实还有很多方法，如修改服务状态，hook dns查询api，拦截rpc请求，修改句柄及nsp等。不过这个最简单稳定。
